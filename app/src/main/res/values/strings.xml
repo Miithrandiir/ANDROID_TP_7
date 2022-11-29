@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ContentProviderHEBAN</string>
+    <string name="app_string_test">test</string>
+    <string name="app_alpha">Ordre alphabétique</string>
+    <string name="app_title">Contenu du dictionnaire utilisateur</string>
+    <string name="app_delete">Supprimer</string>
+    <string name="app_add">Ajouter</string>
+    <string name="app_add_word_title">Ajout d\'un mot dans le dictionnaire</string>
+    <string name="app_cancel">Annuler</string>
+    <string name="app_confirm">Valider</string>
+    <string name="app_dico_word">Mot à ajouter</string>
+    <string name="app_error_already">Erreur, le mot existe déjà</string>
+</resources>
