@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class AddWordActivity extends AppCompatActivity {
 
     public final static String INTENT_DATA_ADD_WORD = "fr.heban.contentproviderheban.addwordActivity";
@@ -50,11 +52,8 @@ public class AddWordActivity extends AppCompatActivity {
         if (cursor.getCount() == 0) {
             // On a pas de doublon !
 
-            //On crée un ContentValues nécessaire pour l'ajout
-            ContentValues contentValues = new ContentValues();
-            contentValues.put(UserDictionary.Words.WORD, word_to_add.getText().toString());
             //On ajoute notre donnée dans la base de données
-            contentResolver.insert(UserDictionary.Words.CONTENT_URI, contentValues);
+            UserDictionary.Words.addWord(this, word_to_add.getText().toString(), 1, "frFR", Locale.FRENCH);
 
             //On renvoi le résultat
             setResult(RESULT_OK);
